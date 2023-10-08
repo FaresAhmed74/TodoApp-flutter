@@ -1,4 +1,4 @@
-import 'package:android_alarm_manager_plus/android_alarm_manager_plus.dart';
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -137,8 +137,8 @@ class _HomeState extends State<Home> {
                     description: taskDescription,
                     time: selectedTime.format(context),
                     date: selectedDate);
-                AndroidAlarmManager.oneShotAt(
-                    selectedDateTime, 1, firedAlarm);
+                // AndroidAlarmManager.oneShotAt(
+                //     selectedDateTime, 1, firedAlarm);
               },
               child: Text('Save'),
             ),
@@ -148,8 +148,8 @@ class _HomeState extends State<Home> {
     );
   }
 
-  void firedAlarm() {
-    print("fired at ${DateTime.now()}");
-  }
+  // void firedAlarm() {
+  //   print("fired at ${DateTime.now()}");
+  // }
 
 }
